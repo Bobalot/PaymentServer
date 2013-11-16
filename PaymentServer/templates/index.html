@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Server</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename="qrcode.js") }}"></script>
+</head>
+<body>
+<h1>{{ header }}</h1>
+
+<a href="{{ bitcoinuri }}">
+<div id="qrcode"></div>
+
+<h3>{{ address }}</h3>
+</a>
+
+<script type="text/javascript">
+new QRCode(document.getElementById("qrcode"), "{{ bitcoinuri }}");
+</script>
+
+</body>
+</html>

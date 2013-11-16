@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+#qrcode img {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
